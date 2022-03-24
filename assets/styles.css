@@ -204,3 +204,81 @@ nav .menu-toggler img {
     height: 500px;
   }
 }
+
+/* [2] Main area */
+
+main .section-title {
+  color: black;
+  text-transform: uppercase;
+  font: 300 3em "Josefin Sans", sans-serif;
+}
+@media (max-width: 767px) {
+  main .section-title {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  main .section-title {
+    font-size: 2em;
+  }
+}
+
+/*
+  Interactive section
+*/
+
+.interactive {
+  /* padding: 160px 0 186px; */
+}
+.interactive img {
+  height: auto;
+  max-width: 100%;
+}
+.interactive p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsl(0, 0%, 55%);
+  font-family: "Alata", sans-serif;
+}
+@media (max-width: 991px) {
+  .interactive {
+    text-align: center;
+    padding: 192px 0 206px;
+  }
+  .interactive .txt {
+    width: 90%;
+    margin: auto;
+    padding-top: 90px;
+  }
+  .interactive p {
+    font-size: 20px;
+    margin-top: 44px;
+  }
+}
+@media (min-width: 992px) {
+  .interactive {
+    padding: 160px 0 186px;
+  }
+  .interactive .container {
+    position: relative;
+  }
+  .interactive img {
+    width: 65%;
+  }
+  .interactive .txt {
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    position: absolute;
+    padding: 50px 0 0 50px;
+    background-color: white;
+  }
+}
+@media (min-width: 1200px) {
+  .interactive picture {
+    width: 75%;
+  }
+  .interactive .txt {
+    padding: 98px 0 0 98px;
+  }
+}
