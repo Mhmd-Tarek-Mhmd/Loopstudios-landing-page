@@ -137,6 +137,15 @@ header .hero {
     margin-top: 245px;
   }
 }
+@media (max-width: 550px) {
+  header .hero {
+    width: 350px;
+    padding: 20px;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 nav {
   height: 176px;
