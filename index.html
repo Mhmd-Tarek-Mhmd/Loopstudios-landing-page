@@ -14,32 +14,41 @@
     />
   </head>
   <body>
-    <nav class="center-flex">
-      <div class="container space-between-flex">
-        <a href="/" class="logo" aria-label="Loopstudios logo">
-          <img src="assets/images/logo.svg" alt="" />
-        </a>
+    <!-- 
+      Header area
+    -->
+    <header>
+      <nav class="center-flex">
+        <div class="container space-between-flex">
+          <a href="/" class="logo" aria-label="Loopstudios logo">
+            <img src="assets/images/logo.svg" alt="" />
+          </a>
 
-        <button
-          class="menu-toggler"
-          aria-label="Show menu"
-          aria-controls="menu"
-          onclick="menuToggler(event)"
-        >
-          <img src="assets/images/icon-hamburger.svg" alt="" />
-        </button>
+          <button
+            class="menu-toggler"
+            aria-label="Show menu"
+            aria-controls="menu"
+            onclick="menuToggler(event)"
+          >
+            <img src="assets/images/icon-hamburger.svg" alt="" />
+          </button>
 
-        <ul class="links" id="menu">
-          <div class="container center-flex">
-            <li><a class="link" href="/">About</a></li>
-            <li><a class="link" href="/">Careers</a></li>
-            <li><a class="link" href="/">Events</a></li>
-            <li><a class="link" href="/">Products</a></li>
-            <li><a class="link" href="/">Support</a></li>
-          </div>
-        </ul>
+          <ul class="links" id="menu">
+            <div class="container center-flex">
+              <li><a class="link" href="/">About</a></li>
+              <li><a class="link" href="/">Careers</a></li>
+              <li><a class="link" href="/">Events</a></li>
+              <li><a class="link" href="/">Products</a></li>
+              <li><a class="link" href="/">Support</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class="hero">Immersive experiences that deliver</h1>
       </div>
-    </nav>
+    </header>
 
     <script>
       function menuToggler(e) {
