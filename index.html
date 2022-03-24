@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loopstudios</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Alata&display=swap"
+    />
+  </head>
+  <body>
+    <nav class="center-flex">
+      <div class="container space-between-flex">
+        <a href="/" class="logo" aria-label="Loopstudios logo">
+          <img src="assets/images/logo.svg" alt="" />
+        </a>
+
+        <button
+          class="menu-toggler"
+          aria-label="Show menu"
+          aria-controls="menu"
+          onclick="menuToggler(event)"
+        >
+          <img src="assets/images/icon-hamburger.svg" alt="" />
+        </button>
+
+        <ul class="links" id="menu">
+          <div class="container center-flex">
+            <li><a class="link" href="/">About</a></li>
+            <li><a class="link" href="/">Careers</a></li>
+            <li><a class="link" href="/">Events</a></li>
+            <li><a class="link" href="/">Products</a></li>
+            <li><a class="link" href="/">Support</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      function menuToggler(e) {
+        e.target.nextElementSibling.classList.toggle("show");
+        if (e.target.nextElementSibling.classList.contains("show")) {
+          e.target.ariaLabel = "Hide menu";
+          e.target.firstElementChild.src = "assets/images/icon-close.svg";
+        } else {
+          e.target.ariaLabel = "Show menu";
+          e.target.firstElementChild.src = "assets/images/icon-hamburger.svg";
+        }
+      }
+    </script>
+  </body>
+</html>
