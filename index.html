@@ -269,9 +269,11 @@
         e.target.nextElementSibling.classList.toggle("show");
         if (e.target.nextElementSibling.classList.contains("show")) {
           e.target.ariaLabel = "Hide menu";
+          document.body.style.overflow = "hidden";
           e.target.firstElementChild.src = "assets/images/icon-close.svg";
         } else {
           e.target.ariaLabel = "Show menu";
+          document.body.style.overflow = "auto";
           e.target.firstElementChild.src = "assets/images/icon-hamburger.svg";
         }
       }
