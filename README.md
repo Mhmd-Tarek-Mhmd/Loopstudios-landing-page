@@ -5,4 +5,4 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ## Links
 
 - Live Site [URL](https://mhmd-tarek-mhmd.github.io/Loopstudios-landing-page)
-- Solution [URL](https://www.frontendmentor.io/solutions/loopstudios-landing-page-)
+- Solution [URL](https://www.frontendmentor.io/solutions/loopstudios-landing-page-SyGaNs5fc)
