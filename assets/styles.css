@@ -14,12 +14,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-button {
-  border: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-}
 
 /* 
   Utilities
@@ -150,6 +144,10 @@ header .hero {
 nav {
   height: 176px;
 }
+nav .menu-toggler {
+  border: none;
+  background: none;
+}
 nav .menu-toggler img {
   pointer-events: none;
 }
@@ -236,9 +234,6 @@ main .section-title {
   Interactive section
 */
 
-.interactive {
-  /* padding: 160px 0 186px; */
-}
 .interactive img {
   height: auto;
   max-width: 100%;
@@ -302,6 +297,7 @@ main .section-title {
 .creation button {
   outline: none;
   color: black;
+  background: none;
   border: 2px solid;
   text-transform: uppercase;
   font-family: "Alata", sans-serif;
