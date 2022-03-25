@@ -291,3 +291,112 @@ main .section-title {
     padding: 98px 0 0 98px;
   }
 }
+
+/*
+  Creation section
+*/
+
+.creation {
+  padding-bottom: 191px;
+}
+.creation button {
+  outline: none;
+  color: black;
+  border: 2px solid;
+  text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  transition: background-color 0.3s;
+  will-change: color, background-color;
+}
+.creation button:hover,
+.creation button:focus-visible {
+  color: white;
+  background-color: black;
+}
+.creation .card-deck {
+  gap: 48px;
+  display: grid;
+  margin-top: 100px;
+  grid-template-rows: repeat(8, 240px);
+}
+.creation .card {
+  position: relative;
+}
+.creation .card::before {
+  content: "";
+  inset: 0 0 0 0;
+  position: absolute;
+  transition: background-color 0.3s;
+  background-color: rgb(0 0 0 / 20%);
+  will-change: border-color, background-color;
+}
+.creation .card:hover::before {
+  background-color: rgb(255 255 255 / 65%);
+}
+.creation .card h3 {
+  left: 40px;
+  bottom: 42px;
+  color: white;
+  text-align: left;
+  position: absolute;
+  will-change: color;
+  text-transform: uppercase;
+  font: 300 2.5em "Josefin Sans", sans-serif;
+}
+.creation .card:hover h3 {
+  color: black;
+}
+.creation .card img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .creation {
+    padding-bottom: 184px;
+  }
+  .creation .mobile {
+    display: none;
+  }
+  .creation .desktop {
+    width: 159px;
+    height: 42px;
+    font-size: 15px;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    border-color: hsl(0, 0%, 41%);
+  }
+  .creation .desktop:hover {
+    border-color: black;
+  }
+  .creation .card-deck {
+    gap: 30px;
+    margin-top: 80px;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fill, 450px);
+    grid-template-columns: repeat(auto-fill, 256px);
+  }
+  .creation .card h3 {
+    left: 42px;
+    bottom: 32px;
+    font-size: 2em;
+  }
+}
+@media (max-width: 767px) {
+  .creation {
+    text-align: center;
+  }
+  .creation .space-between-flex {
+    justify-content: center;
+  }
+  .creation .desktop {
+    display: none;
+  }
+  .creation .mobile {
+    width: 316px;
+    height: 82px;
+    max-width: 100%;
+    font-size: 20px;
+    margin-top: 67px;
+    letter-spacing: 2px;
+  }
+}
